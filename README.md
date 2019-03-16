@@ -1,7 +1,7 @@
 # 常见的帧动画方式：
-GIF；<br/>
-css3 animation；<br/>
-javascript；<br/>
+- GIF；
+- css3 animation；
+- javascript；
 # GIF和css3 animation的不足：
 1. 不能灵活控制动画的暂停和播放。（GIF、animation）
 2. 不能捕捉到动画完成的事件。（GIF）
@@ -10,7 +10,7 @@ javascript；<br/>
 1. 如果有多张帧图片，用一个image标签去承载图片，定时改变image的src属性（不推荐）。
 2. 把所有的动画关键帧都绘制在一张图片里，把图片作为元素的background-image，定时改变元素的background-position属性（推荐）。
 设计一个库要经历一下四个过程
-需求分析—>编程接口—>调用方式—>代码设计
+>需求分析—>编程接口—>调用方式—>代码设计
 ## 需求分析：
 1. 支持图片预加载。
 2. 支持2种动画播放方式，以及自定义没帧动画。
@@ -32,3 +32,12 @@ javascript；<br/>
 10. pause()动画暂停。
 11. restart()动画从上一次暂停处重新执行。
 12. dispose()释放资源。
+## 调用方式：
+1. 支持链式调用，我们期待动词的方式描述接口，调用方式如下：
+```
+var animation = require('animation');
+var demoAnimation = animation().loadImage(images).changePosition(ele,position).repeat(2).then(function(){
+    console.log('动画执行完之后的回调');
+})
+demoAnimation.start(80);
+```
