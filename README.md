@@ -1,7 +1,7 @@
 # 常见的帧动画方式：
-GIF；
-css3 animation；
-javascript；
+GIF；<br/>
+css3 animation；<br/>
+javascript；<br/>
 # GIF和css3 animation的不足：
 1. 不能灵活控制动画的暂停和播放。（GIF、animation）
 2. 不能捕捉到动画完成的事件。（GIF）
@@ -28,3 +28,7 @@ javascript；
 6. repeatForever()无限重复上次动画，相当于repeat()，更友好的一个接口。
 7. wait(time)每个动画执行完后等待时间。
 8. then(callback)动画执行完成后的后调函数。
+9. start(interval)动画开始执行，interval表示动画执行的间隔。
+10. pause()动画暂停。
+11. restart()动画从上一次暂停处重新执行。
+12. dispose()释放资源。
