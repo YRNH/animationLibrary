@@ -20,10 +20,10 @@ javascript；
 6. 支持动画暂停和继续播放。
 7. 支持动画完成后执行后调函数。
 ## 编程接口：
-1. *loadImage（imglist）*预加载图片。
-2. *changePosition(ele,position,imageUrl)*通过改变元素的background-position实现动画。
-3. *changeSrc(ele,imglist)*通过改变image元素的src。
-4. _enterFrame(callback)_每一帧动画执行的函数，相当于用户可以自定义每一帧动画的callback。
+1. loadImage（imglist）预加载图片。
+2. changePosition(ele,position,imageUrl)通过改变元素的background-position实现动画。
+3. changeSrc(ele,imglist)通过改变image元素的src。
+4. enterFrame(callback)    每一帧动画执行的函数，相当于用户可以自定义每一帧动画的callback。
 5. repeat(times)动画重复执行的次数，times为空时表示无限次。
 6. repeatForever()无限重复上次动画，相当于repeat()，更友好的一个接口。
 7. wait(time)每个动画执行完后等待时间。
