@@ -3,9 +3,9 @@ GIF；
 css3 animation；
 javascript；
 # GIF和css3 animation的不足：
-1.不能灵活控制动画的暂停和播放。（GIF、animation）
-2.不能捕捉到动画完成的事件。（GIF）
-3.不能对帧动画做更加灵活的扩展。
+1. 不能灵活控制动画的暂停和播放。（GIF、animation）
+2. 不能捕捉到动画完成的事件。（GIF）
+3. 不能对帧动画做更加灵活的扩展。
 # js实现帧动画的原理
 1.如果有多张帧图片，用一个image标签去承载图片，定时改变image的src属性（不推荐）。
 2.把所有的动画关键帧都绘制在一张图片里，把图片作为元素的background-image，定时改变元素的background-position属性（推荐）。
