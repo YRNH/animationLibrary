@@ -20,7 +20,7 @@ javascript；
 6. 支持动画暂停和继续播放。
 7. 支持动画完成后执行后调函数。
 ## 编程接口：
-1. loadImage（imglist）预加载图片。
+1. `loadImage（imglist）`预加载图片。
 2. changePosition(ele,position,imageUrl)通过改变元素的background-position实现动画。
 3. changeSrc(ele,imglist)通过改变image元素的src。
 4. enterFrame(callback)    每一帧动画执行的函数，相当于用户可以自定义每一帧动画的callback。
