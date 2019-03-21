@@ -41,3 +41,10 @@ var demoAnimation = animation().loadImage(images).changePosition(ele,position).r
 })
 demoAnimation.start(80);
 ```
+## 代码设计:
+1. 我们可以把 "图片预加载" -> "动画执行" -> "动画结束"等一系列操作看成一条任务链（数组）
+####任务链有两种类型的任务：
+a.同步执行完成的。
+b.异步定时执行的(通过计时器或者raf)。
+2. 记录当前任务链的索引。
+3. 每个任务执行完毕后，通过调用next方法，执行下一个任务，同时更新任务链索引值。
